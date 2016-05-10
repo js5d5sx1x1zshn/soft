@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:padding="@dimen/list_padding"
+    android:background="#F0F0F0">
+  <LinearLayout 
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:background="#FFFFFF"
+      >
+
+      <ImageView
+          android:id="@+id/shop_imageview"
+          android:layout_width="80dp"
+          android:layout_height="133dp"
+          android:layout_gravity="center_horizontal"
+          android:maxWidth="20dp"
+          android:src="@drawable/huawei_phone1" />
+
+      <TextView 
+          android:id="@+id/shop_name"
+          android:textSize="15sp"
+          android:textColor="#000000"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="￥399.00"/>
+      <TextView 
+          android:id="@+id/shop_introduction"
+          android:textSize="12sp"
+          android:singleLine="true"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="￥399.00"/>
+      <TextView 
+          android:id="@+id/shop_price"
+          android:textSize="13sp"
+          android:textColor="#000000"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="￥399.00"/>
+  </LinearLayout>
+
+</LinearLayout>

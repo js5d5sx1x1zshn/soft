@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="ECServer_D"
+  id="myeclipse.1334475805902"
+  context-root="/ECServer_D"
+  j2ee-spec="6.0"
+  archive="ECServer_D.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

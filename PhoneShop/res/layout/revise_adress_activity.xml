@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/title_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/titile" >
+	    <ImageView 
+	        android:id="@+id/icon_back"
+	        android:layout_width="80dp"
+	        android:paddingLeft="25dp"
+	        android:paddingRight="30dp"
+	        android:layout_height="80dp"
+	        android:src="@drawable/cs_actionbar_icon"
+	        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="编辑收货地址"
+            android:textColor="@color/juhuang"
+            android:textSize="@dimen/title_text_size" />
+    </RelativeLayout>
+     <!-- 一个导航小绿条 -->
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:padding="10dp">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收货人："
+            android:textSize="18sp"
+            android:textColor="@color/gray_line"
+            />
+        <EditText 
+            android:id="@+id/edit_reciever"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_no_style"
+            />
+    </LinearLayout>
+	<View  
+	   android:layout_width="fill_parent"  
+	   android:layout_height="1dp"  
+	   android:background="#dcdcdc"  
+	   android:visibility="visible" />
+	<LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机号码："
+            android:textSize="18sp"
+            android:textColor="@color/gray_line"
+            />
+        <EditText 
+            android:id="@+id/edit_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:background="@drawable/edittext_no_style"
+            />
+    </LinearLayout>
+    <View  
+	   android:layout_width="fill_parent"  
+	   android:layout_height="1dp"  
+	   android:background="#dcdcdc"  
+	   android:visibility="visible" />
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="详细地址："
+            android:textSize="18sp"
+            android:textColor="@color/gray_line"
+            />
+        <EditText 
+            android:id="@+id/edit_adress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_no_style"
+            />
+    </LinearLayout>
+    <View  
+	   android:layout_width="fill_parent"  
+	   android:layout_height="1dp"  
+	   android:background="#dcdcdc"  
+	   android:visibility="visible" />
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="@color/juhuang"
+        android:background="@drawable/shape_button"
+        android:text="保存" />
+</LinearLayout>

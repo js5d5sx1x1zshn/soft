@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    android:layout_width="fill_parent" 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    >
+    <TextView 
+        	android:id="@+id/edit_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_search_black_press"
+            android:hint="搜索商品名称"
+            android:textSize="13sp"
+            android:gravity="left|center_vertical"
+            android:background="@drawable/shape_back_search"
+            android:layout_marginLeft="20dp"
+      	  	android:layout_marginRight="20dp"
+       	 	android:layout_marginTop="10dp"
+        	android:layout_marginBottom="10dp"
+            />
+    <View  
+       android:id="@+id/line"
+	   android:layout_width="fill_parent"  
+	   android:layout_height="0.5dp"  
+	   android:layout_below="@+id/choise" 
+	   android:background="@color/gray_line"  
+	   android:visibility="visible" />
+   <LinearLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:orientation="horizontal"
+       android:baselineAligned="false"
+       >
+       <LinearLayout 
+            android:orientation="vertical"
+	    	android:layout_width="1dip"
+	    	android:layout_height="fill_parent"
+	    	android:layout_weight="2"
+	    	>
+            <ListView 
+	           android:id="@+id/sort_listview"
+	           android:layout_width="fill_parent"
+	           android:layout_height="fill_parent"
+	           android:scrollbars="none"
+	           >
+           
+       </ListView>
+       </LinearLayout>
+        <LinearLayout 
+            android:orientation="vertical"
+	    	android:layout_width="1dip"
+	    	android:layout_height="fill_parent"
+	    	android:layout_weight="5"
+	    	android:background="#CCCCCC"
+	    	>
+            <ListView 
+	           android:id="@+id/sort_listview_item"
+	           android:layout_width="fill_parent"
+	           android:layout_height="fill_parent"
+	           android:scrollbars="none"
+	           >
+       </ListView>
+       </LinearLayout>
+   </LinearLayout>
+</LinearLayout>

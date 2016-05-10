@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+     android:layout_width="fill_parent"
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_height="fill_parent"
+     android:orientation="horizontal"
+     android:padding="5dp"
+     android:descendantFocusability="blocksDescendants"
+     >
+
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_weight="1" >
+
+	    <ImageView
+	        android:id="@+id/imageView1"
+	        android:layout_width="60dp"
+	        android:layout_height="100dp"
+	        android:layout_centerVertical="true"
+	         />
+
+	    <TextView
+	        android:id="@+id/textView1"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignTop="@+id/imageView1"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginLeft="5dp"
+	        android:text="格式"
+	        android:layout_toRightOf="@+id/imageView1"
+	        android:minLines="2"
+	        android:maxWidth="100dp"
+	        />
+
+	    <TextView
+	        android:id="@+id/zhishi"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="5dp"
+	        android:layout_alignLeft="@+id/textView1"
+	        android:layout_below="@+id/textView1"
+	        android:text="制式" />
+
+	    <TextView
+	        android:id="@+id/price"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/zhishi"
+	        android:layout_below="@+id/zhishi"
+	        android:gravity="center_vertical"
+	        android:text="价格" />
+
+	    <TextView
+	        android:id="@+id/number"
+	        android:layout_width="60dp"
+	        android:layout_height="30dp"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignTop="@+id/price"
+	        android:ems="10"
+	        android:text="13"
+	        android:maxLength="3"
+	        android:gravity="center" />
+
+	</RelativeLayout>
+
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_weight="8">
+	</RelativeLayout>
+	
+</LinearLayout>

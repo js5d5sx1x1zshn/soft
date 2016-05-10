@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/titile" >
+
+        <ImageView
+            android:id="@+id/icon_back"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="30dp"
+            android:src="@drawable/cs_actionbar_icon" />
+
+        <EditText
+            android:id="@+id/edit_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:inputType="textWebEditText"
+            android:layout_toLeftOf="@+id/btn_submit"
+            android:layout_toRightOf="@+id/icon_back"
+            android:background="@drawable/shape_back_search"
+            android:drawableLeft="@drawable/icon_search_black_press"
+            android:gravity="left|center_vertical"
+            android:hint="搜索商品名称"
+            android:layout_marginRight="10dp"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:text="搜索"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/shape_back_search" />
+    </RelativeLayout>
+
+	<ListView
+        android:id="@+id/search_istview"
+        android:dividerHeight="1dp"
+        android:divider="#dcdcdc"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:headerDividersEnabled="true"
+        android:footerDividersEnabled="true"
+        >
+        
+    </ListView>
+</LinearLayout>

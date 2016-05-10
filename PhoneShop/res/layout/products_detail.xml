@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout 
+    android:id="@+id/framelayout_products"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout
+    android:id="@+id/relative_top"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ebebeb"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout_main_container"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/titile" >
+		<ImageView 
+	        android:id="@+id/icon_back"
+	        android:layout_width="80dp"
+	        android:paddingLeft="25dp"
+	        android:paddingRight="30dp"
+	        android:layout_height="80dp"
+	        android:src="@drawable/cs_actionbar_icon"
+	        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="商品详情"
+            android:textColor="@color/juhuang"
+            android:textSize="@dimen/title_text_size" />
+    </RelativeLayout>
+    <!-- 底部确认收货 -->
+	
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/layout_main_container" >
+		<LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    >
+	<RelativeLayout
+        android:id="@+id/relative_fragment_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        >
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/title_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+            <RadioGroup
+                android:id="@+id/radioGroup_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+                 <RadioButton
+                    android:layout_width="10dp"
+                    android:layout_height="10dp" 
+                    android:background="@drawable/slide_image_dot_c2"/>
+                <RadioButton
+                    android:layout_width="10dp"
+                    android:layout_height="10dp" />
+ 				<RadioButton
+                    android:layout_width="10dp"
+                    android:layout_height="10dp" />
+                <RadioButton
+                    android:layout_width="10dp"
+                    android:layout_height="10dp" />
+                <RadioButton
+                    android:layout_width="10dp"
+                    android:layout_height="10dp" />
+                <RadioButton
+                    android:layout_width="10dp"
+                    android:layout_height="10dp" />
+            </RadioGroup>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/imgtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:background="@drawable/title_bg"/>
+    </RelativeLayout>
+    <RelativeLayout 
+        android:layout_marginTop="10dp"
+   	 	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:paddingLeft="10dp"
+    	android:paddingRight="10dp"
+    	android:background="#ffffff">
+    <TextView 
+        android:id="@+id/detail_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@color/red_text"/>
+    <TextView 
+        android:layout_below="@+id/detail_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:id="@+id/detail_introduction"
+        android:textColor="#000000"
+        android:textSize="12sp"/>
+    <TextView 
+        android:layout_below="@+id/detail_introduction"
+        android:id= "@+id/detail_zengpin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="服务："
+        android:layout_marginTop="5dp"
+        android:textSize="14sp"/>
+
+    <LinearLayout
+        android:id="@+id/detail_images"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detail_introduction"
+        android:layout_toRightOf="@+id/detail_zengpin" >
+		<TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="此商品由本终端发货，开具发票，并提供售后服务"
+		    android:textSize="14sp"/>
+       
+    </LinearLayout>
+</RelativeLayout>
+	
+    <RadioGroup 
+	    android:id="@+id/radiogroup_zhishi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" 
+        android:layout_marginTop="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:orientation="vertical"
+        >
+	    
+	    </RadioGroup>
+    <RadioGroup 
+	    android:id="@+id/radiogroup_color"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" 
+        android:layout_marginTop="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:orientation="vertical"
+        >
+	    
+	    </RadioGroup>
+	    
+     <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" 
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+		
+       <TextView 
+        android:id="@+id/detail_text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="数量:"
+        android:textSize="14sp"/>
+
+	<yu.phoneshop.view.MySubButton
+	    android:id="@+id/detail_sub"
+	    android:layout_width="30dp"
+	    android:layout_height="30dp"
+	    android:layout_marginLeft="10dp"
+	    android:background="@drawable/shape_cicle" />
+
+	<EditText
+	    android:id="@+id/detai_num"
+	    android:layout_width="60dp"
+	    android:layout_height="30dp"
+	    android:layout_marginLeft="10dp"
+	    android:gravity="center"
+	    android:background="@drawable/shape_button2"
+	    android:maxLength="3"
+	    android:text="1"
+	    android:inputType="number"/>
+	
+	 <yu.phoneshop.view.MyAddButton
+	    android:id="@+id/detail_add"
+	    android:layout_width="30dp"
+	    android:layout_height="30dp"
+	    android:layout_marginLeft="10dp"
+	    android:background="@drawable/shape_cicle" />
+	</LinearLayout>
+	<View 
+    android:layout_width="match_parent"
+    android:layout_height="10dp"/>
+  </LinearLayout>
+</ScrollView>
+</RelativeLayout>
+<LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" 
+        >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/go_to_order"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="9"
+            android:background="@drawable/shape_button"
+            android:text="立即下单" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btn_add_cart"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="9"
+            android:background="@drawable/shape_button"
+            android:text="加入购物车" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/btn_shopcart"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="3"
+            android:src="@drawable/shopping_cart_light"
+            android:background="@drawable/shape_button" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,9 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+ 	<!-- 导航条字号 -->
+	<dimen name="title_text_size">20sp</dimen>
+	<dimen name="list_padding">0.5dp</dimen>
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  <com.handmark.pulltorefresh.library.PullToRefreshScrollView -->
+  <ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="none"
+    android:background="#F0F0F0"
+   >
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <TextView 
+        	android:id="@+id/edit_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_search_black_press"
+            android:hint="搜索商品名称"
+            android:textSize="13sp"
+            android:gravity="left|center_vertical"
+            android:background="@drawable/shape_back_search"
+            android:layout_marginLeft="20dp"
+      	  	android:layout_marginRight="20dp"
+       	 	android:layout_marginTop="10dp"
+        	android:layout_marginBottom="10dp"
+            />
+    <!-- 上方的广告 -->
+    <RelativeLayout
+        android:id="@+id/relative_fragment_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        >
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+            <RadioGroup
+                android:id="@+id/radioGroup_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:gravity="right"
+                android:orientation="horizontal" 
+                android:layout_marginBottom="2dp">
+                 <RadioButton
+                    android:layout_width="10dp"
+                    android:layout_height="10dp" 
+                    android:background="@drawable/slide_image_dot_c2"/>
+
+                <RadioButton
+                    android:layout_width="10dp"
+                    android:layout_height="10dp" />
+ 				<RadioButton
+                    android:layout_width="10dp"
+                    android:layout_height="10dp" />
+                <RadioButton
+                    android:layout_width="10dp"
+                    android:layout_height="10dp" />
+            </RadioGroup>
+        </LinearLayout>
+    </RelativeLayout>
+    <yu.phoneshop.view.MyGridview
+       android:id="@+id/shop_gridview"
+       android:numColumns="2"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:scrollbars="none"
+       android:fadingEdge="none"
+       android:padding="@dimen/list_padding"
+       android:background="#F0F0F0"
+       >
+    </yu.phoneshop.view.MyGridview>
+  </LinearLayout>
+
+</ScrollView>

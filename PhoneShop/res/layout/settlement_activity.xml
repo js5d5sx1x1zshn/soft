@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout 
+    android:id="@+id/framelayout_products"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout
+    android:id="@+id/relative_top3"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ebebeb"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout_main_container"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/titile" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="确认订单"
+            android:textColor="@color/juhuang"
+            android:textSize="@dimen/title_text_size" />
+    </RelativeLayout>
+   
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/layout_main_container" >
+		<LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    >
+
+		<RelativeLayout
+		    android:id="@+id/settlement"
+		    android:layout_marginTop="10dp"
+		    android:background="#ffffff"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:paddingBottom="5dp"
+		    android:paddingLeft="10dp"
+		    android:paddingTop="5dp" >
+
+			<RelativeLayout
+			    android:id="@+id/relative2"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_toLeftOf="@+id/imageView4" >
+
+		    <RelativeLayout
+		        android:id="@+id/relative1"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        >
+
+		        <ImageView
+		            android:id="@+id/imageView2"
+		            android:layout_width="30dp"
+		            android:layout_height="30dp"
+		            android:src="@drawable/personal_center" />
+
+		        <TextView
+		            android:id="@+id/reciever"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerVertical="true"
+		            android:layout_toRightOf="@+id/imageView2"
+		            android:textSize="16sp"
+		            android:text="韩慧峰" />
+
+		        <ImageView
+		            android:id="@+id/imageView3"
+		            android:layout_width="25dp"
+		            android:layout_height="25dp"
+		            android:layout_centerVertical="true"
+		            android:layout_marginLeft="20dp"
+		            android:layout_toRightOf="@+id/reciever"
+		            android:src="@drawable/about_service" />
+
+		        <TextView
+		            android:id="@+id/reciever_phone"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerVertical="true"
+		            android:layout_toRightOf="@+id/imageView3"
+		            android:text="12345677865"
+		            android:textSize="16sp" />
+		    </RelativeLayout>
+
+		    <TextView
+		        android:id="@+id/adress"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_alignRight="@+id/relative1"
+		        android:layout_below="@+id/relative1"
+		        android:text="上了咖啡哦价格地址"
+		        android:textColor="@color/gray_line" />
+ 		</RelativeLayout>
+		    <ImageView
+		        android:id="@+id/imageView4"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentRight="true"
+		        android:layout_centerVertical="true"
+		        android:src="@drawable/arrow" />
+		</RelativeLayout>
+
+		<RelativeLayout
+		    android:id="@+id/shop_img"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="20dp"
+		    android:background="#ffffff"
+		    android:paddingBottom="5dp"
+		    android:paddingLeft="10dp"
+		    android:paddingTop="5dp" >
+
+		    <ImageView
+		        android:id="@+id/settle_shop1"
+		        android:layout_width="60dp"
+		        android:visibility="gone"
+		        android:layout_height="60dp"
+		        android:layout_centerVertical="true"
+		        android:src="@drawable/huawei1" />
+
+		    <ImageView
+		        android:id="@+id/imageView6"
+		        android:layout_width="60dp"
+		        android:visibility="gone"
+		        android:layout_height="60dp"
+		        android:layout_centerVertical="true"
+		        android:layout_marginLeft="5dp"
+		        android:layout_toRightOf="@+id/settle_shop1"
+		        android:src="@drawable/huawei1" />
+		    <ImageView
+		        android:id="@+id/imageView8"
+		        android:layout_width="60dp"
+		        android:layout_height="60dp"
+		        android:layout_centerVertical="true"
+		        android:layout_marginLeft="5dp"
+		        android:visibility="gone"
+		        android:layout_toRightOf="@+id/imageView6"
+		        android:src="@drawable/huawei1" />
+		    <ImageView
+		        android:id="@+id/imageView7"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentRight="true"
+		        android:layout_centerVertical="true"
+		        android:src="@drawable/arrow" />
+
+		    <TextView
+		        android:id="@+id/shop_number"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerVertical="true"
+		        android:textSize="16sp"
+		        android:layout_toLeftOf="@+id/imageView7"
+		        android:text="共2件" />
+
+		</RelativeLayout>
+
+		<RelativeLayout
+		    android:id="@+id/pay_way"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="20dp"
+		    android:background="#ffffff"
+		    android:paddingBottom="5dp"
+		    android:paddingLeft="10dp"
+		    android:paddingTop="5dp" >
+
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerVertical="true"
+		        android:text="支付及配送"
+		        android:textSize="16sp" />
+
+		    <TextView
+		        android:id="@+id/textView4"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentRight="true"
+		        android:layout_marginRight="20dp"
+		        android:maxEms="4"
+		        android:text="在线支付"
+		        android:textSize="16sp" />
+
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/textView4"
+		        android:maxEms="4"
+		        android:layout_marginRight="20dp"
+		        android:text="普通快递"
+		        android:layout_alignParentRight="true"
+		        android:textSize="16sp" />
+		</RelativeLayout>
+
+		<RelativeLayout
+		    android:id="@+id/shop_money"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="20dp"
+		    android:background="#ffffff"
+		    android:paddingBottom="5dp"
+		    android:paddingLeft="10dp"
+		    android:paddingTop="5dp" >
+
+		    <TextView
+		        android:id="@+id/textView3"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="商品金额"
+		        android:textSize="16sp" />
+
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/textView3"
+		        android:text="运费" />
+		     <TextView
+		        android:id="@+id/textView5"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentRight="true"
+		        android:layout_marginRight="20dp"
+		        android:text="￥22"
+		        android:textColor="@color/red_text"
+		        android:textSize="16sp" />
+
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/textView5"
+		        android:textColor="@color/red_text"
+		        android:layout_marginRight="20dp"
+		        android:text="￥0"
+		        android:layout_alignParentRight="true"
+		        android:textSize="16sp" />
+		</RelativeLayout>
+
+ 	   </LinearLayout>
+</ScrollView>
+</RelativeLayout>
+<LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/titile"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" 
+        >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1" />
+		<TextView 
+		    android:layout_weight="2"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="实付金额"
+		    android:padding="5dp"
+		    android:textSize="18sp"
+		    />
+        <TextView 
+            android:id="@+id/pay_money"
+		    android:layout_weight="2"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textColor="@color/red_text"
+		    android:textSize="18sp"
+		    android:padding="5dp"
+		    />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/submit_order"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="9"
+            android:background="@drawable/shape_button"
+            android:text="提交订单" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+</FrameLayout>

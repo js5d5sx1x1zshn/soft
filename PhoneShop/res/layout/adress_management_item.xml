@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+		<RelativeLayout
+    		xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:paddingBottom="5dp"
+		    android:paddingLeft="10dp"
+		    android:paddingTop="5dp" 
+		    android:paddingRight="5dp">
+		    <ImageView 
+		        android:id="@+id/adress_icon_choose"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_centerVertical="true"
+			    android:src="@drawable/hwpush_btn_check_on_emui"/>
+			<RelativeLayout 
+			    android:id="@+id/relative_back_setdefault"
+			    android:layout_toRightOf="@+id/adress_icon_choose"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_toLeftOf="@+id/imageView4"
+			    >
+		    <RelativeLayout
+		        android:id="@+id/relative1"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        >
+
+		        <ImageView
+		            android:id="@+id/imageView2"
+		            android:layout_width="30dp"
+		            android:layout_height="30dp"
+		            android:src="@drawable/personal_center" />
+
+		        <TextView
+		            android:id="@+id/reciever"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerVertical="true"
+		            android:layout_toRightOf="@+id/imageView2"
+		            android:text="韩慧峰"
+		            android:textSize="16sp" />
+
+		        <ImageView
+		            android:id="@+id/imageView3"
+		            android:layout_width="25dp"
+		            android:layout_height="25dp"
+		            android:layout_centerVertical="true"
+		            android:layout_marginLeft="20dp"
+		            android:layout_toRightOf="@+id/reciever"
+		            android:src="@drawable/about_service" />
+
+		        <TextView
+		            android:id="@+id/phone"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerVertical="true"
+		            android:layout_toRightOf="@+id/imageView3"
+		            android:text="12345677865" 
+		            android:textSize="16sp"/>
+		    </RelativeLayout>
+
+		    <TextView
+		        android:id="@+id/adress"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_alignRight="@+id/relative1"
+		        android:layout_below="@+id/relative1"
+		        android:text="上了咖啡哦价格地址" 
+		        android:textColor="@color/gray_line"/>
+		</RelativeLayout>
+		    <ImageView
+		        android:id="@+id/revise_adress"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentRight="true"
+		        android:layout_centerVertical="true"
+		        android:src="@drawable/icon_edit_n" />
+		</RelativeLayout>

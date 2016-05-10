@@ -1,0 +1,67 @@
+package yu.service.vo;
+
+public class VOShopCart {
+	private String shopid;
+	private String number;
+	private String price;
+	private String imginfo;
+	private String zhishi;
+	private String color;
+	private String pic;
+	
+	public String getZhishi() {
+		return zhishi;
+	}
+	public void setZhishi(String zhishi) {
+		this.zhishi = zhishi;
+	}
+	public String getColor() {
+		return color;
+	}
+	public void setColor(String color) {
+		this.color = color;
+	}
+	public String getShopid() {
+		return shopid;
+	}
+	public void setShopid(String shopid) {
+		this.shopid = shopid;
+	}
+	public String getNumber() {
+		return number;
+	}
+	public void setNumber(String number) {
+		this.number = number;
+	}
+	public String getPrice() {
+		return price;
+	}
+	public void setPrice(String price) {
+		this.price = price;
+	}
+	public String getImginfo() {
+		return imginfo;
+	}
+	public void setImginfo(String imginfo) {
+		this.imginfo = imginfo;
+	}
+	
+	public VOShopCart(String shopid, String number, String price,
+			String imginfo, String zhishi, String color, String pic) {
+		super();
+		this.shopid = shopid;
+		this.number = number;
+		this.price = price;
+		this.imginfo = imginfo;
+		this.zhishi = zhishi;
+		this.color = color;
+		this.pic = pic;
+	}
+	public String getPic() {
+		return pic;
+	}
+	public void setPic(String pic) {
+		this.pic = pic;
+	}
+	
+}

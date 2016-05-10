@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="yu.phoneshop"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="16" />
+	<uses-permission android:name="android.permission.INTERNET" /> 
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" 
+        >
+        <activity
+            android:name="yu.phoneshop.IndexActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name="yu.phoneshop.ProductsDetail"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity 
+            android:name="yu.phoneshop.ShopCartActivity"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity 
+            android:name="yu.phoneshop.UserLogin"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity 
+            android:name="yu.phoneshop.Userlogin2"
+            >
+        </activity>
+        <activity 
+            android:name="yu.phoneshop.Register"
+            >
+        </activity>
+        <activity 
+            android:name="yu.phoneshop.Settlement"
+            >
+        </activity>
+        <activity 
+            android:name="yu.phoneshop.AdressManagement"
+            >
+        </activity>
+        <activity 
+            android:name="yu.phoneshop.SettlementShopList"
+            >
+        </activity>
+        <activity 
+            android:name="yu.phoneshop.ReviseAdressActivity"
+            >
+        </activity>
+        <activity 
+            android:name="yu.phoneshop.OrderActivity"
+            >
+        </activity>
+        <activity 
+            android:name="yu.phoneshop.AllOrdersActivity"
+            >
+        </activity>
+        <activity 
+            android:name="yu.phoneshop.WaitAndAdress"
+            >
+        </activity>
+         <activity 
+            android:name="yu.phoneshop.QuitChangeShop"
+            >
+        </activity>
+         <activity 
+            android:name="yu.phoneshop.CompletedOrder"
+            >
+        </activity>
+        <activity 
+            android:name="yu.phoneshop.MainActivity"
+            >
+        </activity>
+        <activity 
+            android:name="yu.phoneshop.SearchActivity"
+            >
+        </activity>
+    </application>
+
+</manifest>

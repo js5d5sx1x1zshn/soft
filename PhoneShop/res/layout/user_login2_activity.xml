@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/title_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ebebeb" >
+	    <ImageView 
+	        android:id="@+id/icon_back"
+	        android:layout_width="80dp"
+	        android:paddingLeft="25dp"
+	        android:paddingRight="30dp"
+	        android:layout_height="80dp"
+	        android:src="@drawable/cs_actionbar_icon"
+	        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="登录"
+            android:textColor="@color/juhuang"
+            android:textSize="@dimen/title_text_size" />
+    </RelativeLayout>
+     <!-- 一个导航小绿条 -->
+    <View  
+       android:id="@+id/line"
+	   android:layout_width="fill_parent"  
+	   android:layout_height="1dp"  
+	   android:layout_below="@+id/title_top" 
+	   android:background="@color/gray_line"  
+	   android:visibility="visible" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/line"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="25dp" >
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="帐号" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText1"
+            android:layout_below="@+id/editText1"
+            android:layout_marginTop="25dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="密码" >
+            <requestFocus />
+            
+
+        </EditText>
+		<Button
+	        android:id="@+id/btn_login"
+	        android:layout_width="match_parent"
+	        android:layout_height="40dp"
+	        android:layout_alignParentBottom="true"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginBottom="30dp"
+	        android:background="@drawable/shape_button"
+	        android:text="登录"
+	        android:textColor="@color/juhuang" />
+    </RelativeLayout>
+
+</RelativeLayout>

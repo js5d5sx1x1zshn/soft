@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout 
+    android:id="@+id/framelayout_products"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout
+    android:id="@+id/relative_top2"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout_main_container"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/titile" >
+		<ImageView 
+	        android:id="@+id/icon_back"
+	        android:layout_width="80dp"
+	        android:paddingLeft="25dp"
+	        android:paddingRight="30dp"
+	        android:layout_height="80dp"
+	        android:src="@drawable/cs_actionbar_icon"
+	        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="收货地址"
+            android:textColor="@color/juhuang"
+            android:textSize="@dimen/title_text_size" />
+    </RelativeLayout>
+	
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/layout_main_container" >
+		<LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    >
+	<yu.phoneshop.view.MyListview 
+	    android:id="@+id/adress_listview"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    >
+	    
+	</yu.phoneshop.view.MyListview>
+	<View  
+	   android:layout_width="fill_parent"  
+	   android:layout_height="1dp"  
+	   android:background="#dcdcdc"  
+	   android:visibility="visible" />
+ 	</LinearLayout>
+</ScrollView>
+</RelativeLayout>
+<LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/titile"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" 
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        >
+        <Button
+            android:id="@+id/btn_create_adress"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="3"
+            android:text="新建地址"
+            android:textColor="@color/juhuang"
+            android:background="@drawable/shape_button" />
+
+    </LinearLayout>
+</FrameLayout>

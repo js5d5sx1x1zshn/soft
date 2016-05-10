@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+ <RelativeLayout
+     android:id="@+id/relative_user_back"
+     android:layout_width="match_parent"
+     android:layout_height="130dp"
+     android:background="@drawable/bg_usercentral" >
+
+     <ImageView
+         android:id="@+id/imageView1"
+         android:layout_width="60dp"
+         android:layout_height="60dp"
+         android:layout_alignParentLeft="true"
+         android:layout_centerVertical="true"
+         android:layout_marginLeft="28dp"
+         android:src="@drawable/nearby_my_icon_p" />
+
+     <TextView
+         android:id="@+id/text"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignTop="@+id/imageView1"
+         android:layout_marginLeft="25dp"
+         android:layout_toRightOf="@+id/imageView1"
+         android:background="@null"
+         android:text=""
+         android:textSize="15sp" />
+
+     <TextView
+         android:id="@+id/text_quit"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/imageView1"
+         android:layout_marginLeft="26dp"
+         android:layout_toRightOf="@+id/imageView1"
+         android:background="@null"
+         android:text="退出登录"
+         android:textSize="15sp" />
+
+ </RelativeLayout>
+
+  <yu.phoneshop.view.MyListview 
+      android:layout_marginTop="30dp"
+      android:id="@+id/list_items"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:divider="#dcdcdc"
+      android:dividerHeight="1dp"
+      >
+      
+  </yu.phoneshop.view.MyListview>
+  <View  
+	   android:layout_width="fill_parent"  
+	   android:layout_height="1dp"  
+	   android:background="#dcdcdc"  
+	   android:visibility="visible" />
+</LinearLayout>
+</ScrollView>
